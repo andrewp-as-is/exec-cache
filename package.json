@@ -1,0 +1,14 @@
+{
+  "name": "exec-cache",
+  "version": "2019.03.23",
+  "description": "cache exec outputs",
+  "keywords": [
+    "cache",
+    "exec"
+  ],
+  "homepage": "https://github.com/looking-for-a-job/exec-cache",
+  "license": "Unlicense",
+  "bin": {
+    "exec-cache": "./scripts/exec-cache"
+  }
+}
