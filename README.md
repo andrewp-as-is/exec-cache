@@ -3,9 +3,13 @@ https://pypi.org/project/readme-generator/
 -->
 
 [![](https://img.shields.io/pypi/v/exec-cache.svg?maxAge=3600)](https://pypi.org/project/exec-cache/)
+[![](https://img.shields.io/npm/v/exec-cache.svg?maxAge=3600)](https://www.npmjs.com/package/exec-cache)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/exec-cache.svg?branch=master)](https://travis-ci.org/looking-for-a-job/exec-cache/)
 
 #### Installation
+```bash
+$ [sudo] npm i -g exec-cache
+```
 ```bash
 $ [sudo] pip install exec-cache
 ```
