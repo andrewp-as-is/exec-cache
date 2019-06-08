@@ -1,7 +1,9 @@
 <!--
 https://pypi.org/project/readme-generator/
+https://pypi.org/project/python-readme-generator/
 -->
 
+[![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
 [![](https://img.shields.io/pypi/v/exec-cache.svg?maxAge=3600)](https://pypi.org/project/exec-cache/)
 [![](https://img.shields.io/npm/v/exec-cache.svg?maxAge=3600)](https://www.npmjs.com/package/exec-cache)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/exec-cache.svg?branch=master)](https://travis-ci.org/looking-for-a-job/exec-cache/)
@@ -28,11 +30,11 @@ $EXEC_CACHE/<hash>.status
 $ export EXEC_CACHE="custom-path"
 ```
 
-#### CLI
+#### Scripts usage
 ```bash
 usage: exec-cache command [arguments]
 ```
 
 <p align="center">
-    <a href="https://pypi.org/project/readme-generator/">readme-generator</a>
+    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
 </p>

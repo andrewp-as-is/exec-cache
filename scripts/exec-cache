@@ -21,6 +21,7 @@ path="$EXEC_CACHE/$shasum"
     echo $? > "$path".status
 }
 status="$(cat "$path".status)" || exit
+[[ -z "$status" ]] && echo "ERROR: $path.status EMPTY" 1>&2 && exit 1
 out="$(cat "$path".out)" || exit
 err="$(cat "$path".err)" || exit
 [ -s "$path".out ] && { cat "$path".out || exit; }
