@@ -16,14 +16,12 @@ EXEC_CACHE="${EXEC_CACHE-$XDG_CACHE_HOME/exec-cache}"
 shasum="$(echo "$@" | shasum -a 1 | awk '{print $1}')"
 path="$EXEC_CACHE/$shasum"
 ! [ -e "${path%/*}" ] && { mkdir -p "${path%/*}" || exit; }
-! [ -e "$path".out ] || ! [ -e "$path".err ] || ! [ -e "$path".status ] && {
+! [ -e "$path".out ] || ! [ -e "$path".err ] || ! [ -s "$path".status ] && {
     "$@" > "$path".out 2> "$path".err
     echo $? > "$path".status
 }
 status="$(cat "$path".status)" || exit
 [[ -z "$status" ]] && echo "ERROR: $path.status EMPTY" 1>&2 && exit 1
-out="$(cat "$path".out)" || exit
-err="$(cat "$path".err)" || exit
 [ -s "$path".out ] && { cat "$path".out || exit; }
 [ -s "$path".err ] && { cat "$path".err 1>&2 || exit; }
 exit "$status"
