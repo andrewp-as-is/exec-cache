@@ -31,8 +31,22 @@ $ export EXEC_CACHE="custom-path"
 ```
 
 #### Scripts usage
+command|`usage`
+-|-
+`exec-cache` |`usage: exec-cache command [arguments]`
+
+#### Examples
+example #1: cache psql queries
 ```bash
-usage: exec-cache command [arguments]
+$ value="$(exec-cache psql -At -c "SELECT ..." dbname)"
+```
+
+example #2: clear cache
+
+```bash
+$ export EXEC_CACHE=~/.cache/exec-cache/psql # custom folder
+$ rm -fr "$EXEC_CACHE"
+$ value="$(exec-cache psql -At -c "SELECT ..." dbname)"
 ```
 
 <p align="center">

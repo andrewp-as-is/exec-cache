@@ -1,6 +1,6 @@
 {
   "name": "exec-cache",
-  "version": "2019.6.9",
+  "version": "2019.6.12",
   "description": "cache exec outputs",
   "keywords": [
     "cache",
